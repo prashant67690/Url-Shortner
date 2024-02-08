@@ -18,6 +18,15 @@ const URLSchema = new mongoose.Schema(
       type: String,
       default: Date.now,
     },
+    user: {
+      type: mongoose.Schema.ObjectId,
+      ref: "User",
+      required: true,
+    },
+    visited: {
+      type: Number,
+      default: 0,
+    },
   },
   {
     versionKey: false,

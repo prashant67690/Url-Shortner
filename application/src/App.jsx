@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Homepage from "./Homepage";
-import ShortUrlRedirect from "./components/ShortUrlRedirect ";
-import Toggle from "./components/Toggle";
+import Homepage from "./components/Utilities/Homepage";
+import ShortUrlRedirect from "./components/Utilities/ShortUrlRedirect ";
+import Toggle from "./components/Utilities/Toggle";
 
 function App() {
   return (

@@ -8,6 +8,8 @@ router.get("/:code", async (req, res) => {
       urlCode: code,
     });
     if (url) {
+      url.visited++;
+      await URLModel.save();
       return res.redirect(url.longUrl);
     } else {
       return res.status(404).json("No URL Found");

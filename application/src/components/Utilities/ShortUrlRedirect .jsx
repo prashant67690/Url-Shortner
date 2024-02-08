@@ -4,10 +4,11 @@ import { useParams } from "react-router-dom";
 
 export default function ShortUrlRedirect() {
   const { urlCode } = useParams();
-  const serverBaseUrl = import.meta.env.VITE_APP_URI;
+  const serverLocal = "http://localhost:5000";
+  // const serverBaseUrl = import.meta.env.VITE_APP_URI;
 
   const redirect = () => {
-    let url = serverBaseUrl + `/${urlCode}`;
+    let url = serverLocal + `/${urlCode}`;
     window.location.replace(url);
   };
 

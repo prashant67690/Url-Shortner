@@ -90,25 +90,7 @@ export const InputForm = () => {
           <FormErrorMessage>URL is required.</FormErrorMessage>
         )}
       </FormControl>
-      <FormLabel mt={7} fontSize="md">
-        Create personalized and memorable links for your URLs (Optional)
-      </FormLabel>
-      <InputGroup size="md" className={styles.InputGroup}>
-        <InputLeftAddon
-          children={`${clientBaseUrl}`}
-          className={styles.BaseUrlAddon}
-          w="50%"
-        />
-        <Input
-          placeholder="your personalized code "
-          id="urlCode"
-          type="text"
-          value={input.urlCode}
-          onChange={handleInputChange}
-          w="50%"
-          onKeyDown={handleEnter}
-        />
-      </InputGroup>
+
       <Button
         type="submit"
         colorScheme="blue"

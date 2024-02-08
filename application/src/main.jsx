@@ -14,7 +14,7 @@ import axios from "axios";
 
 const serverLocal = "http://localhost:5000";
 const serverBaseUrl = import.meta.env.VITE_APP_URI;
-axios.defaults.baseURL = serverBaseUrl;
+axios.defaults.baseURL = serverLocal;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
